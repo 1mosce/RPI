@@ -1,0 +1,342 @@
+a {
+  text-decoration: none;
+}
+
+#no-icon input {
+  width: 100%;
+}
+
+form {
+  padding: 40px 30px;
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  width: 300px;
+}
+form h4 {
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+form h4 span {
+  color: black;
+  font-weight: 700;
+}
+form p {
+  line-height: 155%;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #000;
+  opacity: 0.65;
+  font-weight: 400;
+  max-width: 200px;
+  margin-bottom: 40px;
+}
+
+input {
+  font-size: 16px;
+  padding: 20px 0px;
+  height: 38px;
+  border: none;
+  border: 1px solid #1A4F8B;
+  border-radius: 4px;
+  background: #fff;
+  width: 280px;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  color: #000;
+  font-weight: 400;
+  -webkit-appearance: none;
+}
+input:focus {
+  border-bottom: solid 1px #2853ff;
+  outline: 0;
+  box-shadow: 0 2px 6px -8px rgba(40, 83, 255, 0.45);
+}
+
+.floating-label-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.floating-label-row .label-row {
+  position: relative;
+  margin-right: 4px;
+  width: 100%;
+}
+.floating-label-row .label-row label {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  padding-left: 44px;
+}
+.floating-label-row .label-row input {
+  width: calc(100% - 44px);
+  margin-left: auto;
+  display: flex;
+}
+.floating-label-row .label-row .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 44px;
+  display: flex;
+}
+.floating-label-row .label-row .icon svg {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  opacity: 0.15;
+  transition: all 0.3s ease;
+}
+.floating-label-row .label-row .icon svg path {
+  transition: all 0.3s ease;
+}
+.floating-label-row .label-row input:not(:-moz-placeholder-shown) {
+  padding: 28px 0px 12px 0px;
+}
+.floating-label-row .label-row input:not(:-ms-input-placeholder) {
+  padding: 28px 0px 12px 0px;
+}
+.floating-label-row .label-row input:not(:placeholder-shown) {
+  padding: 28px 0px 12px 0px;
+}
+.floating-label-row .label-row input:not(:-moz-placeholder-shown) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+.floating-label-row .label-row input:not(:-ms-input-placeholder) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+.floating-label-row .label-row input:not(:placeholder-shown) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+.floating-label-row .label-row input:valid:not(:-moz-placeholder-shown) + label + .icon svg {
+  opacity: 1;
+}
+.floating-label-row .label-row input:valid:not(:-ms-input-placeholder) + label + .icon svg {
+  opacity: 1;
+}
+.floating-label-row .label-row input:valid:not(:placeholder-shown) + label + .icon svg {
+  opacity: 1;
+}
+.floating-label-row .label-row input:valid:not(:-moz-placeholder-shown) + label + .icon svg path {
+  fill: #2853ff;
+}
+.floating-label-row .label-row input:valid:not(:-ms-input-placeholder) + label + .icon svg path {
+  fill: #2853ff;
+}
+.floating-label-row .label-row input:valid:not(:placeholder-shown) + label + .icon svg path {
+  fill: #2853ff;
+}
+.floating-label-row .label-row input:not(:valid):not(:focus) + label + .icon {
+  -webkit-animation-name: shake-shake;
+          animation-name: shake-shake;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.page-wrapper {
+  height: 100%;
+}
+.page-wrapper .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page-wrapper .container .img-block img {
+  width: 100%;
+  height: auto;
+}
+.page-wrapper .container .meeting-text-block h2 {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+.page-wrapper .container .floating-label {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.page-wrapper .container .floating-label label {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 10px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  padding-left: 44px;
+}
+.page-wrapper .container .floating-label input {
+  width: calc(100% - 44px);
+  margin-left: auto;
+  display: flex;
+}
+.page-wrapper .container .floating-label .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 44px;
+  display: flex;
+}
+.page-wrapper .container .floating-label .icon svg {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  opacity: 0.15;
+  transition: all 0.3s ease;
+}
+.page-wrapper .container .floating-label .icon svg path {
+  transition: all 0.3s ease;
+}
+.page-wrapper .container .floating-label input:not(:-moz-placeholder-shown) {
+  padding: 28px 0px 12px 0px;
+}
+.page-wrapper .container .floating-label input:not(:-ms-input-placeholder) {
+  padding: 28px 0px 12px 0px;
+}
+.page-wrapper .container .floating-label input:not(:placeholder-shown) {
+  padding: 28px 0px 12px 0px;
+}
+.page-wrapper .container .floating-label input:not(:-moz-placeholder-shown) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+.page-wrapper .container .floating-label input:not(:-ms-input-placeholder) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+.page-wrapper .container .floating-label input:not(:placeholder-shown) + label {
+  transform: translateY(-10px);
+  opacity: 0.7;
+}
+.page-wrapper .container .floating-label input:valid:not(:-moz-placeholder-shown) + label + .icon svg {
+  opacity: 1;
+}
+.page-wrapper .container .floating-label input:valid:not(:-ms-input-placeholder) + label + .icon svg {
+  opacity: 1;
+}
+.page-wrapper .container .floating-label input:valid:not(:placeholder-shown) + label + .icon svg {
+  opacity: 1;
+}
+.page-wrapper .container .floating-label input:valid:not(:-moz-placeholder-shown) + label + .icon svg path {
+  fill: #2853ff;
+}
+.page-wrapper .container .floating-label input:valid:not(:-ms-input-placeholder) + label + .icon svg path {
+  fill: #2853ff;
+}
+.page-wrapper .container .floating-label input:valid:not(:placeholder-shown) + label + .icon svg path {
+  fill: #2853ff;
+}
+.page-wrapper .container .floating-label input:not(:valid):not(:focus) + label + .icon {
+  -webkit-animation-name: shake-shake;
+          animation-name: shake-shake;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+.page-wrapper .container .floating-label a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  width: 100%;
+  color: #1A4F8B;
+}
+.page-wrapper .container .button-submit-block {
+  width: 100%;
+}
+.page-wrapper .container .button-submit-block button {
+  border: none;
+  width: 100%;
+  background: #1A4F8B;
+  border-radius: 8px;
+  padding: 10px;
+  top: calc(50% - 20px/2);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  text-align: center;
+  letter-spacing: -0.408px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.page-wrapper .container .lower-text-block span {
+  font-size: 16px;
+  line-height: 19px;
+  color: #B0B0B0;
+}
+.page-wrapper .container .social-buttons-block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.page-wrapper .container .social-buttons-block button {
+  width: 50%;
+  height: 24px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.page-wrapper .container .social-buttons-block .facebook-button {
+  background: #385C8E;
+  margin-right: 14px;
+}
+.page-wrapper .container .social-buttons-block .google-button {
+  background: #F14436;
+}
+
+@-webkit-keyframes shake-shake {
+  0% {
+    transform: translateX(-3px);
+  }
+  20% {
+    transform: translateX(3px);
+  }
+  40% {
+    transform: translateX(-3px);
+  }
+  60% {
+    transform: translateX(3px);
+  }
+  80% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes shake-shake {
+  0% {
+    transform: translateX(-3px);
+  }
+  20% {
+    transform: translateX(3px);
+  }
+  40% {
+    transform: translateX(-3px);
+  }
+  60% {
+    transform: translateX(3px);
+  }
+  80% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=style.css.map */

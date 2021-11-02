@@ -1,15 +1,7 @@
 $primary: rgb(40, 83, 255);
-$facebook-button-color:#385C8E;
-$google-button-color:#F14436;
-$lower-text-color:#B0B0B0;
-$primary-blue-color:#1A4F8B;
-$primary-bg-color:#fff;
-$primary-input-color:#000;
-$primary-button-color:#FFFFFF;
 a{
     text-decoration: none;
 }
-
 #no-icon{
     input{
         width: 100%;
@@ -18,7 +10,7 @@ a{
 
 form {
     padding:  40px 30px; 
-    background:  $primary-bg-color; 
+    background:  #fefefe; 
     display:  flex; 
     flex-direction:  column;
     align-items:  flex-start; 
@@ -26,9 +18,9 @@ form {
     width:  300px; 
     h4 {
       margin-bottom:  20px;
-      color:  rgba($primary-input-color, .5);
+      color:  rgba(#000, .5);
       span {
-        color:  rgba($primary-input-color, 1);
+        color:  rgba(#000, 1);
         font-weight:  700; 
       }
     }
@@ -36,7 +28,7 @@ form {
       line-height:  155%; 
       margin-bottom:  5px; 
       font-size:  14px; 
-      color:  $primary-input-color; 
+      color:  #000; 
       opacity:  .65;
       font-weight:  400; 
       max-width:  200px; 
@@ -48,13 +40,13 @@ form {
     padding:  20px 0px; 
     height:  38px; 
     border:  none; 
-    border: 1px solid $primary-blue-color;
+    border: 1px solid #1A4F8B;
     border-radius: 4px;
-    background:  $primary-bg-color; 
+    background:  #fff; 
     width:  280px; 
     box-sizing:  border-box; 
     transition:  all .3s linear; 
-    color:  $primary-input-color; 
+    color:  #000; 
     font-weight:  400;
     -webkit-appearance:  none; 
     &:focus {
@@ -206,7 +198,7 @@ form {
                 line-height: 19px;
                 text-align: center;
                 width: 100%;
-                color: $primary-blue-color;
+                color: #1A4F8B;
               }
         }
         .button-submit-block{
@@ -214,7 +206,7 @@ form {
             button{
                 border:none;
                 width: 100%;
-                background: $primary-blue-color;
+                background: #1A4F8B;
                 border-radius: 8px;
                 padding: 10px;
                 top: calc(50% - 20px/2);
@@ -226,7 +218,7 @@ form {
                 text-align: center;
                 letter-spacing: -0.408px;
                 text-transform: uppercase;
-                color: $primary-button-color;
+                color: #FFFFFF;
                 cursor: pointer; 
             }
         }
@@ -234,7 +226,7 @@ form {
             span{
                 font-size: 16px;
                 line-height: 19px; 
-                color: $lower-text-color;
+                color: #B0B0B0;
             }
         }
         .social-buttons-block{
@@ -247,15 +239,15 @@ form {
                 height: 24px;
                 border:none;
                 border-radius: 5px;
-                color: $primary-bg-color;
+                color: #fff;
                 cursor: pointer;
             }
             .facebook-button{
-                background: $facebook-button-color;
+                background: #385C8E;
                 margin-right: 14px;
             }
             .google-button{
-                background: $google-button-color;
+                background: #F14436;
             }
         }
     }
